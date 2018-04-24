@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <title></title>
+</head>
+<body>
+	<div class="wrapper detail">
+		<header class="head">
+			<span class="back">
+				<img src="img/backblack.png"/>
+			</span>
+			<div class="head-text">
+				借款详情
+			</div>
+			<span>
+				
+			</span>
+		</header>
+		<div class='main'>
+			<div class="detail-group">
+				<div class="detail-top">
+					<span>
+						审批金额
+					</span>
+					<span>
+						借款期限
+					</span>
+				</div>
+				<div class="detail-main">
+					<span class="money" id="money">
+						3,700.00
+					</span>
+					<input type="text" value="12个月" />
+				</div>
+			</div>
+			<div class="detail-group">
+				<div class="detail-top">
+					<span>
+						申请人姓名
+					</span>
+					<span>
+						申请人身份证
+					</span>
+				</div>
+				<div class="detail-main">
+					<span class="name" id="name">
+						董小礼
+					</span>
+					<input type="text" value="*****3350" id="number"/>
+				</div>
+			</div>
+			<div class="detail-group">
+				<div class="detail-top">
+					<span>
+						到账卡
+					</span>
+					<span>
+						还款卡
+					</span>
+				</div>
+				<div class="detail-main">
+					<input type="text" value="中国农业银行(8613)" class="input-left cart"/>
+					<input type="text" value="中国农业银行(8613)" class="cart"/>
+				</div>
+			</div>
+			<div class="detail-group">
+				<div class="detail-top">
+					<span>
+						借款进度
+					</span>
+					<span>
+						
+					</span>
+				</div>
+				<div class="detail-main">
+					<div class="time-main">
+						<div class="time-group">
+							<div class="hr"></div>
+							<div class="time-h">
+								<div class="time-circle"></div>
+								<span class="circle-text">
+									款项筹集中
+								</span>
+								<input type="text" value="2018-04-15 12:08:14" class="circle-time"/>
+							</div>
+						</div>
+						<div class="time-group">
+							<div class="hr"></div>
+							<div class="time-h">
+								<div class="time-circle"></div>
+								<span class="circle-text">
+									<span>
+										确认借款
+									</span>
+									<input type="text" value="2018-04-15 12:08:14" class="circle-time"/>
+								</span>
+							</div>
+						</div>
+						<div class="time-group">
+							<div class="hr"></div>
+							<div class="time-h">
+								<div class="time-circle"></div>
+								<span class="circle-text">
+									<span>
+										借款审核通过
+									</span>
+								</span>
+							</div>
+							<div class="time-p">
+								请尽快确认借款，过期将无法确认
+							</div>
+						</div>
+						<div class="time-group">
+							<div class="hr"></div>
+							<div class="time-h">
+								<div class="time-circle"></div>
+								<span class="circle-text">
+									<span>
+										借款审核中
+									</span>
+									<input type="text" value="2018-04-15 12:08:14" class="circle-time"/>
+								</span>
+							</div>
+							<div class="time-p">
+								审核周期是0-2个工作日，我们会尽快处理，请耐心等待
+							</div>
+						</div>
+						<div class="time-group">
+							<div class="time-h">
+								<div class="time-circle"></div>
+								<span class="circle-text">
+									<span>
+										借款已提交
+									</span>
+									<input type="text" value="2018-04-15 12:08:14" class="circle-time"/>
+								</span>
+							</div>
+							<div class="time-p">
+								您的借贷已提交至审批系统，我们会尽快完成审核并通知您审核结果
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$('#money').html(localStorage.getItem('money'))
+			$('#name').html(localStorage.getItem('name'))
+			$('#number').html(localStorage.getItem('number'))
+			$('.cart').val('中国农业银行('+localStorage.getItem('cart')+')')
+			$('.back').click(function(){
+				window.history.back()
+			})
+			$('.head').click(function(){
+				window.location.href='results.html'
+			})
+		})
+	</script>
+</body>
+</html>

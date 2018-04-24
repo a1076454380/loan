@@ -1,0 +1,53 @@
+html,body,.wrapper{width: 100%;height: 100%;overflow-x: hidden;color: rgb(108,108,108);background: white;font-size: .2rem;}
+input{font-size: .25rem;}
+.head{width:100%;height: .8rem;display: flex;align-items: center;border-bottom: 1px solid rgb(235,235,235);position: fixed;top: 0;left: 0;width: 100%;padding: 0 .1rem;background: white;}
+.head span{width: .6rem;display: flex;align-items: center;}
+.head div{flex: 1;text-align: center;}
+.head img{width: .3rem;}
+.head .back{text-align: right;}
+.main{width: 100%;margin-top:.7rem ;height: calc(100% - .7rem);overflow: hidden;padding-bottom: .4rem;overflow-y: auto;}
+/*首页*/
+.index .main-top{display: flex;align-items: center;height: .7rem;margin: 0 .2rem;}
+.index .main-top img{width: .35rem;margin-right: .1rem;}
+.index .main-top input{border: 0;flex: 1;}
+.index .circle{width: 4.5rem;height: 4.5rem;border-radius: 50%;background: url(../img/back.png) no-repeat;background-size: 100%;}
+.index .circle input{background: none;}
+.index .circle{margin:1.5rem auto .4rem;display: flex;flex-direction: column;align-items: center;justify-content: center;overflow: hidden;}
+.index .circle p{font-size: .27rem;}
+.index .circle input{font-weight: bold;font-size: .6rem;border: 0;text-align: center;}
+.index .ok{background: #5fa1f5;color: white;display: flex;align-items: center;justify-content: center;height: .7rem;width: 4.4rem;border-radius: .5rem;margin: .2rem auto 0;}
+.index .inform{padding: 0;margin: 0 auto;border: 0;line-height: .8rem;height: initial;text-align: center;display: block;width: 5rem;}
+/*借款详情*/
+.detail .detail-group{width: 100%;background: white;margin-bottom: .15rem;padding: 0 .25rem;}
+.detail .main{background: rgb(248,248,248);}
+.detail .detail-top{display: flex;align-items: center;justify-content: space-between;height: .7rem;}
+.detail .detail-main{display: flex;align-items: center;justify-content: space-between;}
+.detail .detail-main .money{font-size: .5rem;color: #555bc0;}
+.detail .detail-main input{flex: 1;text-align: right;padding: 0;border: 0;color: #333333;font-size: .3rem;margin: 0;}
+.detail .detail-main .input-left{text-align: left;}
+.detail .time-main{bwidth: 100%;position: relative;}
+.detail .time-group{margin: 0 .2rem;min-height: 1.4rem;border-bottom: 1px solid rgb(235,235,235);box-sizing: border-box;position: relative;padding-bottom: .1rem;}
+.detail .time-group .hr{position: absolute;height: 100%;width: .05rem;background:#555BC0;top: .5rem;left: -.04rem;}
+.detail .time-h{display: flex;align-items: center;font-weight: 600;padding-top: .4rem;}
+.detail .time-circle{width: .25rem;height: .25rem;border-radius: 50%;background: #555bc0;position: relative;left: -.15rem;}
+.detail .circle-text{flex: 1;display: flex;align-items: center;justify-content: space-between;font-size: .3rem;}
+.detail .circle-time{color: #999999!important;font-size: .25rem!important;margin: 0;padding: 0;height: auto;line-height: initial;}
+.detail .time-p{color: #999999;font-size: .25rem;margin-left: .25rem;}
+.detail .name{font-size: .3rem;}
+/*审核结果*/
+.results .yes{width: 1rem;height: 1rem;margin: .6rem auto 0;display: block;}
+.results .p{text-align: center;margin: .3rem 0;font-size: .25rem;color: #333333;border: 0;height: initial;line-height: none;padding: 0;}
+.results .input-box{display: flex;align-items: center;font-size: .3rem;font-weight: 600;justify-content: center;align-items: center;}
+.results .input-box input{color: #fa6e00;text-align: center;border: 0;margin: 0;padding: 0;width: 2.4rem;font-size: .32rem;line-height: none;height: auto;}
+.results .circle-box{display: flex;align-items: center;justify-content: center;margin: .3rem 0;}
+.results .yellow,.results .grey{width: .2rem;height: .2rem;border-radius: 50%;}
+.results .yellow{background: #fa6e00;}
+.results .grey{background: #dedede;}
+.results img{width: .38rem;height: .38rem;}
+.results .hr{width: 1.5rem;height: 2px;background: #dedede;}
+.results .yellowhr{background:#fa6e00;}
+.results .text{width: 1.8rem;text-align: center;}
+.results .text-box{margin:.8rem .2rem 0;}
+.results .text-top{color: #333333;font-weight: 600;}
+.results .btn{background:#fa6e00;color: white;width: 6.7rem;height: .8rem;display: flex;align-items: center;justify-content: center;border-radius: .1rem;margin: 1rem auto .5rem;}
+.results a{color: #fa6e00;text-decoration: underline;display: block;margin: 0 auto;text-align: center;}

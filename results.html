@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <title></title>
+</head>
+<body>
+	<div class="wrapper results">
+		<header class="head">
+			<span class="back">
+				<img src="img/backblack.png"/>
+			</span>
+			<div class="head-text">
+				审核结果
+			</div>
+			<span></span>
+		</header>
+		<div class='main'>
+			<img src="img/yes.png" class="yes"/>
+			<input type="text" value="您的提现审核已通过" class="p"/>
+			<div class="input-box">
+				<span>
+					预计将在
+				</span>
+				<input type="text" value="4月23日 02:34" />
+				<span>
+					前到账
+				</span>
+			</div>
+			<div class="circle-box">
+				<span class="yellow"></span>
+				<span class="yellowhr hr"></span>
+				<img src="img/circle.png"/>
+				<span class="greyhr hr"></span>
+				<span class="grey"></span>
+			</div>
+			<div class="circle-box">
+				<span class="text">
+					审核通过
+				</span>
+				<span class="text">
+					放款中
+				</span>
+				<span class="text">
+					银行到账
+				</span>
+			</div>
+			<div class="text-box">
+				<div class="text-top">
+					温馨提示
+				</div>
+				<div class="text-main">
+					提示： 当前订单排队数量较多，耐心等待，银行到账后将通过短信、消息通知等形式通知您，请注意查看。
+				</div>
+			</div>
+			<div class="btn">
+				完成
+			</div>
+			<a href="index.html">返回首页</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$('.back').click(function(){
+				window.history.back()
+			})
+			$('.btn').click(function(){
+				window.location.href='index.html'
+			})
+		})
+	</script>
+</body>
+</html>

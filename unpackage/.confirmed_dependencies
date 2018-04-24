@@ -1,0 +1,19 @@
+{
+  "index.html": {
+    "refer": [
+      "detail.html"
+    ]
+  },
+  "detail.html": {
+    "refer": [
+      "results.html",
+      "index.html"
+    ]
+  },
+  "results.html": {
+    "refer": [
+      "index.html",
+      "detail.html"
+    ]
+  }
+}
